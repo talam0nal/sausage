@@ -1,0 +1,87 @@
+.price-properties {
+	padding-top: 35px;
+	z-index: 2;
+	position: absolute;
+	line-height: 1;
+	white-space: nowrap;
+	text-align: center;
+	.circle;
+}
+
+.circle {
+	border-radius: 100%;
+}
+
+.pseudo-clearfix {
+	display: block;
+	float: none;
+}
+
+.relative {
+	position: relative;
+}
+
+.not-float {
+	float: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.single {
+	line-height: 1;
+}
+
+.absolute(@top) {
+  position: absolute;
+  z-index: 2;
+  top: @top;
+}
+
+.fixed(@top) {
+  position: fixed;
+  z-index: 2;
+  top: @top;
+}
+
+.wh(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.bgc(@color) {
+	background-color: @color;
+}
+
+.push(@amount) {
+	margin-bottom: @amount;
+}
+
+.full {
+	width: 100%;
+}
+
+.left-top-pushed {
+	top: 0;
+	left: 0;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.invisible {
+	display: none;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.pseudo {
+	display: block;
+	position: absolute;
+	content: ' ';
+	color: transparent;
+}

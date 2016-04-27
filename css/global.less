@@ -1,0 +1,178 @@
+@import "fonts";
+@import "../config/colors";
+@import "mixins";
+@import "@{path}css/vendor/bootstrap";
+
+body {
+	.shablon;
+}
+
+header {
+	padding-top: 23px;
+	padding-bottom: 23px;
+	.push(60px); .bgc(@theme-color); .text-center; .huge; .white; .single; .full;
+}
+
+figure {
+	.push(90px);
+}
+
+.overlay {
+	.wh(100%, 100%); .pointer; display: none; .fixed;.left-top-pushed;.bgc(transparent);z-index: 1;
+}
+
+[class^="modal"] {
+	.absolute(30px); .wh(75%, auto);
+	left: 12.5%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 5%;
+	z-index: 22;
+	.bgc(#fff);
+	[alt="close"] {
+		.absolute(20px);
+		right: 20px;
+		cursor: pointer;
+		z-index: 2333;
+	}
+
+	.promo {
+		width: 40%;
+		margin-left: 25%;
+		.push(40px);
+	}
+
+	.zoomed {
+		img {
+			.full;
+		}
+		.relative;
+	}
+}
+
+.modal-sausage {
+	display: none;
+}
+
+.modal-fry {
+	display: none;
+}
+
+.modal-zoom {
+	display: none;
+	h4 {
+		.huge; .text-center;
+	}
+
+	.discount__huge {
+		.absolute(30px);
+		right: -20px;
+		padding-top: 40px;
+		font-size: 121px;
+		.circle;
+		.wh(280px, 280px);
+		.white; .text-center;
+		.bgc(@theme-color);
+	}
+}
+
+.good {
+	.picture {
+		border: 2px @theme-color solid;
+		.circle; .relative;
+		img {
+			.circle;
+		}
+		.faded {
+			.wh(125px, 125px);
+			.absolute(20px);
+			.price-properties; .bigger; .white; .bgc(@gray);
+			right: -20px;
+			border: 2px @black solid;
+		}
+
+		.price {
+			right: -63px;
+			.bgc(@theme-color);
+			border: 2px @black solid;
+			.absolute(125px); .price-properties; .bigger; .white; .wh(125px, 125px);
+		}
+
+		[class^="discount"] {
+			padding-top: 12px;
+			.wh(92px, 92px);
+			.absolute(20px);
+			.bgc(@theme-color);
+			.text-center; .circle; .white; .bigger;  
+			&[class$="right"] {
+				right: -20px;
+			}
+			&[class$="left"] {
+				left: -20px;
+			}
+		}
+
+	}
+
+	h4 {
+		.huge; .not-float; .text-center;
+		span {
+			.regular;
+		}
+	}
+
+	h5 {
+		.text-center; .small; .single;
+		span {
+			.regular;
+		}
+	}
+}
+
+time {
+	.push(25px); .big; .hcolor;
+}
+
+span.heading {
+	.push(120px); .theme; .big; .pseudo-clearfix;
+}
+
+main {
+	article {
+		&:after {
+			.pseudo;
+			top: 2vh;
+			right: 60px;
+			height: 135vh;
+			background-image: url('/img/pattern.png');
+			background-color: transparent;	
+			width: 1px;
+			background-repeat: repeat-y;
+		}
+	}
+
+	.left {
+		h4 {
+			.huge;
+		}
+	}
+
+}
+
+
+h6 {
+	margin-top: 50px;
+	.regular;
+	span {
+		.small;
+	}
+}
+
+h4, h5, h6 {
+	.theme; .book; .single;
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.bgc(@gray); .full; .text-center; .white; .smaller;
+}
